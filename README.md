@@ -125,7 +125,7 @@ Aliases: `seq-encode`, `seq-decode`.
 ## Constraints
 
 - Данные должны влезать в BMP: `zeroUnicodeIndex + maxDif ≤ 0xFFFF`.
-- Для разностей > ~65300 `encode` бросит ошибку.
+- Для разностей > ~65300 `encode` бросит ошибку!
 
 ## Testing
 
