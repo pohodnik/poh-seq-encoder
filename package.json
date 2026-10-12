@@ -12,9 +12,9 @@
     }
   },
   "bin": {
-    "seq": "./bin/seq.js",
-    "seq-encode": "./bin/seq-encode.js",
-    "seq-decode": "./bin/seq-decode.js"
+    "seq": "bin/seq.js",
+    "seq-encode": "bin/seq-encode.js",
+    "seq-decode": "bin/seq-decode.js"
   },
   "files": [
     "src/",
@@ -49,7 +49,7 @@
   "author": "Nikolay Fedoseev",
   "repository": {
     "type": "git",
-    "url": "git@github.com:pohodnik/poh-seq-encoder.git"
+    "url": "git+ssh://git@github.com/pohodnik/poh-seq-encoder.git"
   },
   "devDependencies": {
     "typescript": "^5.4.0"
