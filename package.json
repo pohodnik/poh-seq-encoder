@@ -1,0 +1,57 @@
+{
+  "name": "poh-seq-encoder",
+  "version": "1.0.0",
+  "description": "Compact encoding for sequences of non-negative integers using delta + RLE over the Unicode BMP.",
+  "type": "module",
+  "main": "./src/index.js",
+  "types": "./src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "default": "./src/index.js"
+    }
+  },
+  "bin": {
+    "seq": "./bin/seq.js",
+    "seq-encode": "./bin/seq-encode.js",
+    "seq-decode": "./bin/seq-decode.js"
+  },
+  "files": [
+    "src/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\"",
+    "test:watch": "node --test --watch \"test/**/*.test.js\"",
+    "test:types": "tsc --noEmit",
+    "test:all": "npm test && npm run test:types",
+    "bench": "node benchmark/bench.js",
+    "example": "node examples/basic.js"
+  },
+  "keywords": [
+    "encoding",
+    "compression",
+    "delta",
+    "rle",
+    "unicode",
+    "sequence",
+    "timeseries",
+    "gps",
+    "telemetry",
+    "cli"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "author": "Nikolay Fedoseev",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:pohodnik/poh-seq-encoder.git"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
