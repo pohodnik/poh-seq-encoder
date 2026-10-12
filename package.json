@@ -1,6 +1,6 @@
 {
-  "name": "poh-seq-encoder",
-  "version": "1.0.2",
+  "name": "@pohodnik/seq-encoder",
+  "version": "1.0.1",
   "description": "Compact encoding for sequences of non-negative integers using delta + RLE over the Unicode BMP.",
   "type": "module",
   "main": "./src/index.js",

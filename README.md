@@ -1,4 +1,4 @@
-# seq-encoder
+# @pohodnik/seq-encoder
 
 Compact encoding for sequences of non-negative integers using **delta encoding**
 and **RLE over the Unicode BMP**. Designed for telemetry, GPS tracks, time series
@@ -14,7 +14,7 @@ and any data where consecutive values change by small amounts.
 ## Installation
 
 ```bash
-npm install poh-seq-encoder
+npm install @pohodnik/seq-encoder
 ```
 
 ## Usage
@@ -25,7 +25,7 @@ npm install poh-seq-encoder
 import {
   encodePositiveIntegerSeq,
   decodePositiveIntegerSeq,
-} from "poh-seq-encoder";
+} from "@pohodnik/seq-encoder";
 
 const lat = [5322314, 5322313, 5322313, 5322314, 5322315];
 const encoded = encodePositiveIntegerSeq(lat);
